@@ -1,20 +1,17 @@
-Package: future.lambda
-Title: ...
+Package: future.aws.lambda
+Title: A Future API for Parallel Processing on AWS Lambda
 Depends:
     R (>= 4.0.0),
     future
 Imports:
     utils,
     tools
-Suggests:
-    rdrop2,
-    googledrive
 Version: 0.0.0-9000
 Authors@R: 
     person(given = "Henrik", family = "Bengtsson",
            role = c("aut", "cre", "cph"),
            email = "henrikb@braju.com")
-Description: An implementation of the Future API for submitting futures to a "queue". External "workers" can poll the queue for unresolved futures to resolve them.
+Description: An implementation of the Future API for resolving futures via AWS Lambda.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
